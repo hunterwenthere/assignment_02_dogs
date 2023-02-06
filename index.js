@@ -99,7 +99,9 @@ const paginationObject  = [
           <p class="card-text">${paginationObject[i].details[2]}</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button id="button${i}" type="button" class="btn btn-sm btn-outline-secondary" onlick="document.location='assignment_02/detail.html'">View</button>
+              <a href= "assignment_02/detail.html">
+              <button id="button${i}" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </a>
             </div>
           <small class="text-muted">${paginationObject[i].type}</small>
           </div>
@@ -129,5 +131,5 @@ const paginationObject  = [
     };
 
     function loadDetail() {
-      window.location.href = "C:\Users\hunte\OneDrive\Desktop\School\ASE-220 Application Development\Week 3 - Fundamentals of JavaScript\assignment_02\detail.html";
+      window.location.href = "assignment_02/detail.html";
     };
