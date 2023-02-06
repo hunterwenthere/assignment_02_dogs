@@ -5,6 +5,7 @@ function LoadDetailPage(petNum){
     var showMyContent = document.getElementById("content");
     var index = petNum - 1
 
+    alert(myData)
     showMyContent.innerHTML += `
     <div id="content" class="col">
     <div class="album py-5 bg-light">
