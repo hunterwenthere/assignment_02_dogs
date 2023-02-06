@@ -131,5 +131,5 @@ const paginationObject  = [
     };
 
     function loadDetail() {
-      window.location.href = "assignment_02/detail.html";
+      window.location.href = "assignment_02_dogs/detail.html";
     };
