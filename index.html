@@ -1,0 +1,209 @@
+<!--
+  Objectives
+    data
+        in addition to the information provided in the file, associate each dog with a number of 3-5 pictures taken from the list of pictures (it's OK if the pictures do not represent the same dog).
+        feel free to change the pet type arbitrarily for some pets.
+    on index.html
+        encode the data in the appropriate JavaScript format.
+        write code that reads through the data and paginates it, displaying limited information (e.g., name, breed, gender, and age) of 6 pets at a time.
+        link every dog to their specific detail.html page (e.g., detail.html?pet=12).
+        create a next/previous button system that enables to refresh the page (e.g., index.html?page=3) and see the next/previous 6 pets.
+    on detail.html
+        read the data from JSON file (e.g., data.json), which you have to preliminarily create
+        write code that displays the complete information for the selected dog (based on the pet index in the query string) and shows its pictures.
+        create a back button that enables the user to go back to the index page.
+
+  Rubric
+
+  There are 10 total points available for this assignment. They are assigned/deducted as follows.
+
+    +1 point: the index page works as expected.
+    +1 point: the detail page works as expected.
+    +1 point: the code on the index page contains systems for showing errors in case the user visits the index of a page that does not exist. 
+    +1 point: the code on the detail page contains systems for showing errors in case the user visits the page of a pet that does not exist.
+    +1 point: the website is published on GitHub.
+    +1 point: the website is posted on GitHub pages.
+    +1 point: the HTML code is properly formatted.
+    +1 point: you include code for changing the title of the detail page based on the name of the pet.
+    +2 points: the detail page shows an arbitrary number of pictures (not necessarily always 3) that depends on the number of pictures you assign to each pet.
+    +1 point: the detail page shows a different background based on the gender of the pet. 
+    +2 points: you modify the data, so some pets are not available for adoption, and you don't display them on the index page.  
+    -5 points: the detail pages are hard-coded (i.e., information is not loaded dynamically).
+    -5 points: the data is formatted incorrectly.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assignment_02/detail.html" rel="html">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+<script src="index.js"></script>
+
+  </head>
+
+  <body>
+    
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Pet adoption website</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div id="content" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" src="pictures/dog1/pic1.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href="pictures/dog1/pic1.jpg" width="250" height="250"/></svg>
+            <div class="card-body">
+              <p class="card-text">Key details about the pet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                <small class="text-muted">Pet type</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Key details about the pet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                <small class="text-muted">Pet type</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Key details about the pet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                <small class="text-muted">Pet type</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" src xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">Key details about the pet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                <small class="text-muted">Pet type</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Key details about the pet.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                <small class="text-muted">Pet type</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content" class="col">
+          <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" src="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><image href=${paginationObject[i].src} width="250" height="250"/></svg>
+            <div class="card-body">
+              <p class="card-text">${paginationObject[i].details[0]}</p>
+              <p class="card-text">${paginationObject[i].details[1]}</p>
+              <p class="card-text">${paginationObject[i].details[2]}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>  
+                </div>
+              <small class="text-muted">${paginationObject[i].type}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="showTable"></div>
+<div class="a">
+  <a href="javascript:getPereviousPage()" id="previousPage">Previous
+  Page</a> 
+  <a href="javascript:getNextPage()" id="nextPage">Next Page</a>
+  Page Number: <span id="paginationPage"></span>
+  </div>
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
