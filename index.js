@@ -99,7 +99,7 @@ const paginationObject  = [
           <p class="card-text">${paginationObject[i].details[2]}</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <a href= "assignment_02_dogs/detail.html">
+              <a href= "detail.html">
               <button id="button${i}" type="button" class="btn btn-sm btn-outline-secondary">View</button>
               </a>
             </div>
@@ -131,5 +131,5 @@ const paginationObject  = [
     };
 
     function loadDetail() {
-      window.location.href = "assignment_02_dogs/detail.html";
+      window.location.href = "detail.html";
     };
