@@ -1,4 +1,5 @@
-import data from './data.json';
+//import data from './data.json';
+const data = require('./data.json')
 
 function LoadDetailPage(petNum){
     var myData = JSON.parse(data);
