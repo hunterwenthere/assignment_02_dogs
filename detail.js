@@ -1,8 +1,7 @@
-//import data from './data.json';
-const data = require('./data.json')
+import data from './data.json' assert { type: 'JSON' };
 
 function LoadDetailPage(petNum){
-    var myData = JSON.parse(data);
+    const myData = JSON.parse(data);
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
 
