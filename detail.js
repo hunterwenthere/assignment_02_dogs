@@ -1,4 +1,4 @@
-import data from 'data.json';
+import data from './data.json';
 
 function LoadDetailPage(petNum){
     var myData = JSON.parse(data);
