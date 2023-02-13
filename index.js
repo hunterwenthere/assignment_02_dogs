@@ -12,6 +12,7 @@ const paginationObject  = [
       type: "Boxer cross",
       details: ["Female - 2Yrs 2Mths 4Wks (approx)","Location: Kenton county","Available for adoption: yes"],
     },
+    
     {
       src: "pictures/dog3/pic1.jpg",
       type: "Domestic Short Hair cross",

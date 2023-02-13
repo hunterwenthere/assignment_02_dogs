@@ -10,6 +10,7 @@ function LoadDetailPage(petNum){
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
     
+    
 
     showMyContent.innerHTML += `
     <div id="content" class="col">
