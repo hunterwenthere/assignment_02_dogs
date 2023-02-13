@@ -1,6 +1,11 @@
-import data from './data.json' assert { type: 'JSON' };
-
 function LoadDetailPage(petNum){
+  
+  fetch('./data.json').then(response => {
+    return response.json();
+  }).then(data => {
+    console.log(data);
+  });
+
     const myData = JSON.parse(data);
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
