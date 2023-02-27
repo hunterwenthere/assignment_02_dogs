@@ -1,5 +1,6 @@
+const url = "data.json";
+
 function LoadDetailPage(petNum){
-  const url = "data.json";
     const myData = JSON.parse(data);
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
