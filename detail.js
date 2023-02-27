@@ -42,6 +42,7 @@ function LoadDetailPage(petNum){
   </div>
   </div>
     `;
+    showMyContent.append(innerHTML);
 }
 
 function reqData(){
