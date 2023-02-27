@@ -1,15 +1,8 @@
 function LoadDetailPage(petNum){
-  
-  fetch('./data.json').then(response => {
-    return response.json();
-  }).then(data => {
-    console.log(data);
-  });
-
+  const url = "data.json";
     const myData = JSON.parse(data);
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
-    
     
 
     showMyContent.innerHTML += `
@@ -49,4 +42,12 @@ function LoadDetailPage(petNum){
   </div>
   </div>
     `;
+}
+
+function reqData(){
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
 }
