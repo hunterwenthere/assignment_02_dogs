@@ -4,7 +4,6 @@ function LoadDetailPage(petNum){
     const myData = JSON.parse(data);
     var showMyContent = document.getElementById("detailContent");
     var index = petNum - 1
-    
 
     showMyContent.innerHTML = `
     <div id="content" class="col">
